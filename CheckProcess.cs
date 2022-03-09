@@ -61,5 +61,38 @@ namespace ConsoleApp1
             }
             return true;
         }
+
+        public Boolean checkMain(int lineNum1, int lineNum2,int catchAmount1, int catchAmount2)
+        {
+            if (checkRangeOfLine(lineNum1) == false)
+            {
+                return false;
+            }
+            if (checkRangeOfLine(lineNum2) == false)
+            {
+                return false;
+            }
+            if (compareLine(lineNum1, lineNum2) == false)
+            {
+                return false;
+            }
+            if (checkRangeOfAmount(catchAmount1) == false)
+            {
+                return false;
+            }
+            if (checkRangeOfAmount(catchAmount2) == false)
+            {
+                return false;
+            }
+            if (checkInput(lineNum1, catchAmount1) == false)
+            {
+                return false;
+            }
+            if (checkInput(lineNum2, catchAmount2) == false)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

@@ -22,26 +22,8 @@ try {
 
     //check input
     CheckProcess cp = new CheckProcess();
-    if(cp.checkRangeOfLine(lineNum1) == false)
+    if (cp.checkMain(lineNum1, lineNum2, catchAmount1, catchAmount2) == false)
     {
-        return;
-    }
-    if(cp.checkRangeOfLine(lineNum2) == false){
-        return;
-    }
-    if(cp.compareLine(lineNum1, lineNum2) == false){
-        return;
-    }
-    if(cp.checkRangeOfAmount(catchAmount1) == false){
-        return;
-    }
-    if(cp.checkRangeOfAmount(catchAmount2) == false){
-        return;
-    }
-    if(cp.checkInput(lineNum1, catchAmount1) == false){
-        return;
-    }
-    if(cp.checkInput(lineNum2, catchAmount2) == false){
         return;
     }
 
@@ -72,25 +54,8 @@ try {
 
         //check input
         cp = new CheckProcess();
-        if(cp.checkRangeOfLine(lineNum1) == false){
-            return;
-        }
-        if(cp.checkRangeOfLine(lineNum2) == false){
-            return;
-        }
-        if(cp.compareLine(lineNum1, lineNum2) == false){
-            return;
-        }
-        if(cp.checkRangeOfAmount(catchAmount1) == false){
-            return;
-        }
-        if(cp.checkRangeOfAmount(catchAmount2) == false){
-            return;
-        }
-        if(cp.checkInput(lineNum1, catchAmount1) == false){
-            return;
-        }
-        if(cp.checkInput(lineNum2, catchAmount2) == false){
+        if (cp.checkMain(lineNum1, lineNum2, catchAmount1, catchAmount2) == false)
+        {
             return;
         }
     }
